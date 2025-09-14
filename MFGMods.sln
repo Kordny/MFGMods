@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MFGTweaks", "MFGTweaks\MFGTweaks.csproj", "{CD052A0E-B43C-4C63-B946-A040563FD2FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MFGTileNumbers", "MFGTileNumbers\MFGTileNumbers.csproj", "{7DB9977A-ECF9-4B91-B871-B6BEE2724EF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{CD052A0E-B43C-4C63-B946-A040563FD2FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD052A0E-B43C-4C63-B946-A040563FD2FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD052A0E-B43C-4C63-B946-A040563FD2FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DB9977A-ECF9-4B91-B871-B6BEE2724EF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DB9977A-ECF9-4B91-B871-B6BEE2724EF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DB9977A-ECF9-4B91-B871-B6BEE2724EF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DB9977A-ECF9-4B91-B871-B6BEE2724EF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
