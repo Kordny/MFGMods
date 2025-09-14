@@ -11,3 +11,7 @@ Includes various QoL improvements:
 - **StoryTimerFreeze**: Disables timer between text messages in story
 - **UnlimitedHomeButtons**: Allows unlimited use of buttons (such as My Room, Gacha) on home screen
 - **UnlimitedPaseli**: Disables PIN code prompts and lockout after spending PASELI
+
+## MFGTileNumbers
+
+Adds numbers to tiles
