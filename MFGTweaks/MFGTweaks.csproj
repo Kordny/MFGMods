@@ -31,5 +31,8 @@
         <Reference Include="..\Assemblies\Assembly-CSharp.dll" Publicize="true">
             <Private>false</Private>
         </Reference>
+		<Reference Include="..\Assemblies\UniTask.dll" Publicize="true">
+			<Private>false</Private>
+		</Reference>
     </ItemGroup>
 </Project>
