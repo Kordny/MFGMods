@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-namespace MFGTweaks;
+namespace MFGTileNumbers;
 
 public class TexturePatcher
 {

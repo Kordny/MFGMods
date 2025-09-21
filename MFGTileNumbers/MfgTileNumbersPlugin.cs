@@ -4,7 +4,7 @@ using BepInEx.Configuration;
 using Cysharp.Threading.Tasks;
 using HarmonyLib;
 
-namespace MFGTweaks;
+namespace MFGTileNumbers;
 
 [BepInPlugin(PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]
 public class MfgTweaksPlugin : BaseUnityPlugin
