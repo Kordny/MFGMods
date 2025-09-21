@@ -13,6 +13,7 @@ Includes various QoL improvements:
 - **UnlimitedPaseli**: Disables PIN code prompts and lockout after spending PASELI
 - **KeypadUnscramble**: Unscrambles the keypad pin code keys when logging in
 - **SceneTurboSkip**: Skips some scenes to make playing faster
+- **TitleScreenSoundNoSurround**: Makes title, attract, demo screens use all speakers, which adds sound back for PC players
 
 ## MFGTileNumbers
 
