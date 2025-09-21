@@ -11,22 +11,23 @@ namespace MFGTweaks.Tweaks;
 public class SceneTurboSkip : BaseTweak
 {
     
-    public override string Description => "Skips a lot of scenes to make playing faster";
+    public override bool EnabledByDefault => false;
+    
+    public override string Description => "Skips some scenes to make playing faster";
 
     public override void Initialize()
     {
         Harmony.PatchAll(typeof(SceneTurboSkip));
     }
-
-
-    [HarmonyPostfix, HarmonyPatch(typeof(GachaPlayFlow), nameof(GachaPlayFlow.GachaPlay_Init))]
-    private static void Hook_GachaPlayFlow_GachaPlay_Init(GachaPlayFlow __instance)
+    
+    [HarmonyPrefix, HarmonyPatch(typeof(GachaPlayFlow), nameof(GachaPlayFlow.GachaPlay_Init))]
+    private static void HookPre_GachaPlayFlow_GachaPlay_Init2(GachaPlayFlow __instance)
     {
         __instance.IsForceSkip = true;
     }
 
-    [HarmonyPrefix, HarmonyPatch(typeof(GachaPlayFlow), nameof(GachaPlayFlow.GachaPlay_Init))]
-    private static void Hook_GachaPlayFlow_GachaPlay_Init2(GachaPlayFlow __instance)
+    [HarmonyPostfix, HarmonyPatch(typeof(GachaPlayFlow), nameof(GachaPlayFlow.GachaPlay_Init))]
+    private static void HookPost_GachaPlayFlow_GachaPlay_Init(GachaPlayFlow __instance)
     {
         __instance.IsForceSkip = true;
     }
@@ -55,7 +56,5 @@ public class SceneTurboSkip : BaseTweak
         LogoFlow.IsLogoSceneOnceDisplayed = true;
         __instance.GotoNextScene("Title");
     }
-
-
 
 }
