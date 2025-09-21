@@ -20,7 +20,6 @@ public class KeypadUnscramble : BaseTweak
     [HarmonyPostfix, HarmonyPatch(typeof(TenkeyManager), nameof(TenkeyManager.GetTenkeyPattern))]
     private static void Hook_TenkeyManager_GetTenkeyPattern(ref List<int> __result)
     {
-        new System.Random().Next(14);
         List<int> list = new List<int>();
         for (int j = 0; j < 14; j++)
         {
@@ -28,7 +27,5 @@ public class KeypadUnscramble : BaseTweak
         }
         __result = list.OrderBy((int i) => Guid.NewGuid()).ToList();
     }
-
-
 
 }
