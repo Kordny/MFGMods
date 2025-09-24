@@ -17,6 +17,8 @@ public abstract class BaseTweak
     
     public virtual string Description => null;
 
+    public virtual void BindConfig() {}
+
     public abstract void Initialize();
 
 }

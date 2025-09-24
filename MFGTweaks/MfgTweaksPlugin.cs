@@ -27,10 +27,9 @@ public class MfgTweaksPlugin : BaseUnityPlugin
             var tweakName = tweak.GetType().Name;
 
             var configEntry = Config.Bind("Tweaks", tweakName, tweak.EnabledByDefault, BuildDescription(tweak));
+            tweak.BindConfig();
             if (!configEntry.Value)
-            {
                 continue;
-            }
             
             Logger.LogMessage($"Initializing {tweakName}...");
             try
