@@ -28,6 +28,7 @@ public class ExtraNetcafeVoices : BaseTweak
                         if (num != 0)
                         {
                             __result = label + $"N_{num + 1}";
+                            return false;
                         }
                         __result = label + "N";
                         return false;
