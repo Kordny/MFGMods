@@ -17,6 +17,7 @@ Includes various QoL improvements:
 - **EnableHeadphoneOptions**: Force enables the option in the ingame menu to change the headphone volume
 - **ExtraNetcafeVoices**: Makes the girls say special NetCafe specific voice lines on touch. Only Iyo and girls released after her have them
 - **MuteBGM**: Lets you mute in-game BGM using Alt + M
+- **DisableCRC**: Allows you to modify the Addressable AssetBundles found in StreamingAssets/aa/StandaloneWindows64
 
 ## MFGTileNumbers
 
