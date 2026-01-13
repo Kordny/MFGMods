@@ -37,5 +37,8 @@
 		<Reference Include="..\Assemblies\VirtualSurround.dll" Publicize="true">
 			<Private>false</Private>
 		</Reference>
+		<Reference Include="..\Assemblies\Unity.ResourceManager.dll" Publicize="true">
+			<Private>false</Private>
+		</Reference>
     </ItemGroup>
 </Project>
