@@ -1,4 +1,8 @@
+using Cysharp.Threading.Tasks;
 using HarmonyLib;
+using MFG.Types;
+using System.Threading;
+using UnityEngine;
 
 namespace MFGTweaks.Tweaks;
 

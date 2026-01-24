@@ -15,7 +15,7 @@ Includes various QoL improvements:
 - **SceneTurboSkip**: Skips some scenes to make playing faster. Specific scenes can be chosen under [Tweaks.TurboSceneSkip]
 - **TitleScreenSoundNoSurround**: Makes title, attract, demo screens use all speakers, which adds sound back for PC players
 - **EnableHeadphoneOptions**: Force enables the option in the ingame menu to change the headphone volume
-- **ExtraNetcafeVoices**: Makes the girls say special NetCafe specific voice lines on touch. Only Iyo and girls released after her have them
+- **ExtraNetcafeVoices**: Makes the girls randomly say special NetCafe specific voice lines on touch. Only some girls have them
 - **MuteBGM**: Lets you mute in-game BGM using Alt + M
 
 ## MFGTileNumbers

@@ -1,13 +1,14 @@
 using HarmonyLib;
 using MFG.Types;
+using System;
 
 namespace MFGTweaks.Tweaks;
 
 public class ExtraNetcafeVoices : BaseTweak
 {
 
-    public override string Description => "Makes the girls say special NetCafe specific voice lines on touch. Only Iyo and girls released after her have them";
-    public override bool EnabledByDefault => false;
+    public override string Description => "Makes the girls randomly say special NetCafe specific voice lines on touch. Only some girls have them";
+    public override bool EnabledByDefault => true;
 
     public override void Initialize()
     {
@@ -18,7 +19,9 @@ public class ExtraNetcafeVoices : BaseTweak
     [HarmonyPrefix, HarmonyPatch(typeof(SoundManager), nameof(SoundManager.GetExtraVoiceLabel))]
     private static bool Hook_SoundManager_GetExtraVoiceLabel(ref string label, ref CharaType type, ref string __result)
     {
-        if (type >= CharaType.Chara13)
+        Random random = new Random();
+        int r = random.Next(0, 2);
+        if (SoundManager.ExVoiceEnableCharas.Contains(type) && r == 1)
         {
             switch (label)
             {
@@ -30,6 +33,7 @@ public class ExtraNetcafeVoices : BaseTweak
                             __result = label + $"N_{num + 1}";
                             return false;
                         }
+
                         __result = label + "N";
                         return false;
                     }
@@ -43,6 +47,7 @@ public class ExtraNetcafeVoices : BaseTweak
                     return false;
             }
         }
+
         __result = label;
         return false;
     }
