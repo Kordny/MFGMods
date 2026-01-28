@@ -22,5 +22,13 @@ public class UnlimitedHomeButtons : BaseTweak
         __result = true;
         return false;
     }
+    
+    [HarmonyPrefix, HarmonyPatch(typeof(HomeFlow), nameof(HomeFlow.OnInitializeBeforeIntroduction))]
+    private static void Hook_HomeFlow_OnInitializeBeforeIntroduction()
+    {
+        var isContinued = GameDataManager.PlayerConfig.IsContinued;
+        GameDataManager.PlayerConfig.ResetForContinueStart();
+        GameDataManager.PlayerConfig.IsContinued = isContinued;
+    }
 
 }
