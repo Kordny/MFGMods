@@ -40,8 +40,5 @@
 		<Reference Include="..\Assemblies\Unity.ResourceManager.dll" Publicize="true">
 			<Private>false</Private>
 		</Reference>		
-		<Reference Include="..\Assemblies\UnityEngine.UI.dll" Publicize="true">
-			<Private>false</Private>
-		</Reference>
     </ItemGroup>
 </Project>

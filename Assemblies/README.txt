@@ -4,4 +4,3 @@ Assembly-CSharp.dll
 UniTask.dll
 VirtualSurround.dll
 Unity.ResourceManager.dll
-UnityEngine.UI.dll
